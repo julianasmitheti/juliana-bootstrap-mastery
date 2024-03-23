@@ -1,26 +1,52 @@
-// Override Bootstrap's Sass default variables
-//
-// Nearly all variables in Bootstrap are written with the `!default` flag.
-// This allows you to override the default values of those variables before
-// you import Bootstrap's source Sass files.
-//
-// Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, change you can either change
-// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
-// `body { color: red; }`.
-// For options, see node_modules/bootstrap/scss/_variables.scss
-
-// Examples:
-
-// $body-bg: black;
-// $body-color: white;
-// $link-hover-color: grey;
-// $font-family-sans-serif: "Helvetica Neue";
-
-// Import Bootstrap styles:
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Import partials:
 
-// Custom styles:
+.footfoot {
+  text-align: center;
+}
 
+.jumbotron {
+  text-align: center;
+  color: white;
+  padding: 80px;
+  background-image: url("../img/pirate-ship.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.display-6 {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.col-md-4, .col-md-8, .row, #carouselExampleCaptions {
+  padding-top: 30px;
+}
+
+.piratedesc {
+  font-size: 18.2px;
+}
+
+.carousel-caption{
+ background-color: rgba(0, 0, 0, 0.371);
+  align-content: center;
+ color: rgb(255, 255, 255);
+ font-size: 20px;
+ text-align: center;
+}
+
+.captcrit {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.byline {
+  font-style: italic;
+}
+
+#carouselExampleCaptions {
+  max-width: 700px;
+  max-height: 640px;
+}
